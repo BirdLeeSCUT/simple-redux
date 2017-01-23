@@ -1,3 +1,4 @@
+# (Not done yet, To Continue)
 ## 前言
 simple-redux 并不是简化版的 redux, 简称 sr, 而是基于redux + immutable.js 的一种二次标准化构建，相比于原生redux, 要达到的目标有
 - 使用抽象的匿名空间来缩短事件传递长度复杂度，匿名空具体实现为为控制实例 partStore

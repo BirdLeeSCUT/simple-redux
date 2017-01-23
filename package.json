@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "description": "simple-redux, a new way to use redux simplier.",
   "main": "index.js",
+  "repository": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --require babel-polyfill --compilers js:babel-register"
   },
   "keywords": [
     "redux",
@@ -12,5 +13,16 @@
     "flux"
   ],
   "author": "birdylee",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "immutable": "^3.8.1"
+  },
+  "devDependencies": {
+    "babel-polyfill": "^6.22.0",
+    "babel-preset-env": "^1.1.8",
+    "babel-register": "^6.22.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "redux": "^3.6.0"
+  }
 }
