@@ -1,4 +1,4 @@
-import * as sr from '../index';
+import {createReducer, createPartStore} from '../index';
 
 let modelState = {
 	name: 'Peter',
@@ -15,7 +15,7 @@ let modelState = {
 let initState = modelState;
 
 const namespace = 'mergeDeep';
-const partStore = sr.createPartStore(namespace, modelState);
-const reducer = sr.createReducer(namespace, initState);
+const partStore = createPartStore(namespace, modelState);
+const reducer = createReducer(namespace, initState);
 
 export { namespace , partStore, reducer }
