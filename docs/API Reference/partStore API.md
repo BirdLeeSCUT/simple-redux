@@ -177,10 +177,8 @@ expect(ps.state).to.deep.equal({
 //初始数据
 expect(ps.state).to.deep.equal({
 	name: 'Peter',
-	age: 20,
 	address: {
 		provice: 'Zhejiang',
-		city: 'Hangzhou',
 		school: {
 			university: 'SCUT',
 			campus: 'UniversityCity',
@@ -203,9 +201,7 @@ ps.mergeDeep({
 //结果如下
 expect(ps.state).to.deep.equal({
 	name: 'Tom',
-	age: 20,
 	address: {
-		provice: 'Zhejiang',
 		city: 'Guangzhou',
 		school: {
 			university: 'SCUT',
@@ -298,6 +294,7 @@ expect(ps.state).to.deep.equal({
 		nick: 'Pappy'
 	}]
 });
+
 //使用update方法 在 pets 数组处 增加一个元素
 ps.update('pets', pets => pets.push({
 	id: '0124'

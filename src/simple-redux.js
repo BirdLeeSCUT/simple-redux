@@ -25,7 +25,7 @@ let createPartStore = (namespace) => {
 	let setRaw = () => (index , newValue) => {
 		let arrIndex;
 		if( getType(index) == 'string')
-			arrIndex = index.split('/');
+			arrIndex = index.split('.');
 		else if ( getType(index) == 'array')
 			arrIndex = index;
 		else
